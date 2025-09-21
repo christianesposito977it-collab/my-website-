@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Elegance and Style</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <input type="text" id="usernameOrEmail" placeholder="Username o Email" required><br>
+            <input type="password" id="password" placeholder="Password" required><br>
+            <span id="captchaLabel"></span><br>
+            <input type="text" id="captchaInput" placeholder="Rispondi al captcha" required><br>
+            <button type="submit">Login</button>
+        </form>
+        <p><a href="register.html">Registrati</a> | <a href="forgot-password.html">Password dimenticata?</a></p>
+    <div id="loginMessage"></div>
+    <button id="deleteAccountBtn" style="margin-top:15px;width:100%;background:#d32f2f;color:#fff;">Elimina account</button>
+    </div>
+    <script src="assets/auth.js"></script>
+</body>
+</html>
