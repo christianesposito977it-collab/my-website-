@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance and Style</title>
+    <style>
+        body {
+            background-color: #ffffff; 
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        h1 {
+            text-align: center; 
+        }
+        .product {
+            border: 2px solid #000;
+            padding: 15px;
+            margin: 15px;
+            display: inline-block;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            border-radius: 8px; 
+            box-sizing: border-box; 
+        }
+        .button {
+            background-color: #4CAF50; 
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px; 
+        }
+        .cart-button {
+            background-color: #008CBA; 
+        }
+        .paypal-button {
+            background-color: #FFC300; 
+        }
+        .contact {
+            margin-top: 20px;
+            text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Elegance and Style</h1>
+        <div class="product" data-name="Gucci Shorts" data-price="1200">
+            <h2>Gucci Shorts</h2>
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTo2MeS6T9ZysH5ZqofIrGL2QeuuGw6nJNl18VSIDVU5vk1l-zJSnoum4g1g_gOK5DQqU6V7Mkr2YWIDf6aZwnaDeT-yMVX-Q" alt="Gucci Shorts" width="200">
+            <p>Price: 1200€</p>
+            <input type="number" value="1" min="1" class="quantity">
+            <button class="button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-name="Gucci Shorts" data-price="650">
+            <h2>Gucci Shorts</h2>
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS1Xmh8OrugJeDeV904JH26s47r7arIpl_IG165MsECM9aoZkOePe3KVBsc0kQ46vlcWDCwYxsXrN_aTwNToSelX40rj14gENRHGGtmOG4sUZ45ksqbc3o3" alt="Gucci Shorts" width="200">
+            <p>Price: 650€</p>
+            <input type="number" value="1" min="1" class="quantity">
+            <button class="button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-name="Gucci Shorts" data-price="850">
+            <h2>Gucci Shorts</h2>
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS3YS7pFE_OHCu-YOToLURt9C8TaMNna6wzwpL2cJxNF3Ysf1IF7zsQVgEdEp1bYwzZO05VTRfsUUryYBeiX88GMu14W5mKA7JnulCFNlBMUINLJdZWqpae" alt="Gucci Shorts" width="200">
+            <p>Price: 850€</p>
+            <input type="number" value="1" min="1" class="quantity">
+            <button class="button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-name="Shorts" data-price="1450">
+            <h2>Shorts</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTzaEXteMeTbmbvlgscMyhu9Gb-_6-HHN6TL6SqU4SNn5p4VDmTDXcVu2JLwxYizBLtjOg9rcoV75ccrcIESygTSZqaDbNH8GsAfFq0-m0UX3UkTCAdrnUC" alt="Shorts" width="200">
+            <p>Price: 1450€</p>
+            <input type="number" value="1" min="1" class="quantity">
+            <button class="button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-name="Shorts" data-price="900">
+            <h2>Shorts</h2>
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQb-g0lpWQh8ZPEXqd9dkIIqJMRccbRUm4ZplPUIPDIX08NEDeAizkIzoXvZhDxr5qY_uetVbZsALiGipR6RCxhPTyLUd56PivMk9V11odTJu668OqKu3gyPg" alt="Shorts" width="200">
+            <p>Price: 900€</p>
+            <input type="number" value="1" min="1" class="quantity">
+            <button class="button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-name="Shorts" data-price="1100">
+            <h2>Shorts</h2>
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSKfvBobk3n7gxGzd45fvsBIYqE18iR_8Z9d4uJ4T8LVeIFa8cDtmwCI3tt46GpVda4TB0t4OPY8tZnoQwzFl729XS6QoSR342MFEJcgcLF07MUeym2N8Y_KA" alt="Shorts" width="200">
+            <p>Price: 1100€</p>
+            <input type="number" value="1" min="1" class="quantity">
+            <button class="button add-to-cart">Add to Cart</button>
+        </div>
+        <div class="contact">
+            <button class="button cart-button" onclick="viewCart()">View Cart</button>
+            <button class="button paypal-button" onclick="payWithPayPal()">Pay with PayPal</button>
+            <p>Contact me on WhatsApp: <a href="https://wa.me/3714788898">371 478 8898</a></p>
+        </div>
+    </div>
+    <script>
+        let cart = [];
+
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                const productElement = this.closest('.product');
+                const productName = productElement.getAttribute('data-name');
+                const price = parseFloat(productElement.getAttribute('data-price'));
+                const quantity = parseInt(productElement.querySelector('.quantity').value);
+                addToCart(productName, price, quantity);
+            });
+        });
+
+        function addToCart(productName, price, quantity) {
+            cart.push({ productName, price, quantity });
+            alert(`${quantity} x ${productName} added to cart.`);
+        }
+
+        function viewCart() {
+            let total = 0;
+            let cartDetails = "Cart:\n";
+            cart.forEach(item => {
+                cartDetails += `${item.quantity} x ${item.productName} - ${item.price}€\n`;
+                total += item.price * item.quantity;
+            });
+            cartDetails += `Total: ${total}€`;
+            alert(cartDetails);
+        }
+
+        function payWithPayPal() {
+            alert("Redirecting to PayPal...");
+            window.location.href = "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=christianesposito977.it@gmail.com&item_name=Purchase&amount=" + calculateTotal() + "&currency_code=EUR";
+        }
+
+        function calculateTotal() {
+            return cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+        }
+    </script>
+</body>
+</html>
